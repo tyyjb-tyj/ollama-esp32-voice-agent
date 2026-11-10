@@ -1,6 +1,16 @@
 # 智慧物院 · AI 校园客服
 
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![ESP32-S3](https://img.shields.io/badge/ESP32--S3-N16R8V-E7352C)
+![Ollama](https://img.shields.io/badge/Ollama-qwen2.5%3A1.5b-000000)
+![Whisper](https://img.shields.io/badge/Whisper-small-412991)
+![RAG](https://img.shields.io/badge/RAG-ChromaDB-FFA500)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1&logo=mysql&logoColor=white)
+![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32--S3-FF7F00)
+
 > 基于端侧大模型与 RAG 的校园智能语音问答系统 —— 毕业设计项目
+
+![Gradio Web 可视化界面](assets/web-ui.png)
 
 一套「**ESP32-S3 硬件语音终端 + PC 边缘端 AI 服务器**」的智能校园问答系统：
 用户对着麦克风说话，ESP32 采集音频经 WiFi 上传到 PC，PC 完成语音识别、知识库检索与
