@@ -25,8 +25,13 @@ CAMPUS_ACTIONS = {
     4: {"name": "校园官网", "url": "https://www.hmlc.edu.cn"},
 }
 
+try:
+    from local_config import DB_PASSWORD
+except ImportError:
+    DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
+
 DB_CONFIG = {
-    'host': 'localhost', 'user': 'root', 'password': '123456',
+    'host': 'localhost', 'user': 'root', 'password': DB_PASSWORD,
     'database': 'hmlc_college', 'charset': 'utf8mb4'
 }
 

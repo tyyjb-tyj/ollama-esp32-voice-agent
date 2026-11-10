@@ -1,10 +1,16 @@
+import os
 import pymysql
+
+try:
+    from local_config import DB_PASSWORD
+except ImportError:
+    DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
 
 # 连接数据库
 conn = pymysql.connect(
     host='localhost',
     user='root',
-    password='123456',
+    password=DB_PASSWORD,
     database='hmlc_college',
     charset='utf8mb4'
 )

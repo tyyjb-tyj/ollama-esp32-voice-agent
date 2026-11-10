@@ -1,0 +1,26 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---- 运行时 / 调试产物 ----
+debug_last.wav
+server.log
+received_audio/
+*.tmp
+
+# ---- ESP32 / PlatformIO ----
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+
+# ---- 本地配置（含真实密码，不提交） ----
+local_config.py
+wifi_config.h
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
